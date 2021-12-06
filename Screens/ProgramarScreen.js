@@ -5,12 +5,12 @@ const ProgramarScreen = ({navigation}) => {
     return (
         <View style={styles.container}>
             <Button 
-                title="React" 
+                title="TOP" 
                 onPress={()=>navigation.navigate('ReactScreen')}
                 color='red'
             />
             <Button 
-                title="JavaScript" 
+                title="ADC" 
                 onPress={()=>navigation.navigate('JavascriptScreen')}
                 color='red'
                 

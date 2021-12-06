@@ -4,9 +4,9 @@ import SettingsScreen from '../Screens/SettingsScreen';
 import AboutScreen from '../Screens/AboutScreen';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import HomeScreen from '../Navigations/StackNavigation1';
-import GitHubScreen from '../Screens/GitHubScreen';
+import SearchScreen from '../Screens/SearchScreen';
 import ProgramarScreen from '../Navigations/StackNavigation2';
-import Contacto1Screen from './TopTapNavigator1';
+import RolesScreen from './TopTapNavigator1';
 
 const Tab = createBottomTabNavigator();
 
@@ -41,12 +41,12 @@ export default function BottomTabNavigator1(){
             
             />
             <Tab.Screen
-                name="GitHub"
-                component={GitHubScreen}
+                name="Search"
+                component={SearchScreen}
                 options={{
-                    tabBarLabel:"GitHub",
+                    tabBarLabel:"Search",
                     tabBarIcon:({color})=>(
-                        <Ionicons name={"logo-github"} size={20} color={color}/>
+                        <Ionicons name={"search"} size={20} color={color}/>
                     )
                 }}
             
@@ -55,20 +55,20 @@ export default function BottomTabNavigator1(){
                 name="Programar"
                 component={ProgramarScreen}
                 options={{
-                    tabBarLabel:"Programar",
+                    tabBarLabel:"Guides",
                     tabBarIcon:({color})=>(
-                        <Ionicons name={"logo-electron"} size={20} color={color}/>
+                        <Ionicons name={"folder-open"} size={20} color={color}/>
                     )
                 }}
             
             />
             <Tab.Screen
-                name="Contacto"
-                component={Contacto1Screen}
+                name="Roles"
+                component={RolesScreen}
                 options={{
-                    tabBarLabel:"Contacto",
+                    tabBarLabel:"Rol",
                     tabBarIcon:({color})=>(
-                        <Ionicons name={"person-circle-outline"} size={20} color={color}/>
+                        <Ionicons name={"people"} size={20} color={color}/>
                     )
                 }}
             
@@ -77,9 +77,9 @@ export default function BottomTabNavigator1(){
                 name="Settings"
                 component={SettingsScreen}
                 options={{
-                    tabBarLabel:"Configuración",
+                    tabBarLabel:"Wallpapers",
                     tabBarIcon:({color})=>(
-                        <Ionicons name={"ios-settings"} size={20} color={color}/>
+                        <Ionicons name={"images"} size={20} color={color}/>
                     )
                 }}
             />
@@ -87,7 +87,7 @@ export default function BottomTabNavigator1(){
                 name="About"
                 component={AboutScreen}
                 options={{
-                    tabBarLabel:"Acerca de",
+                    tabBarLabel:"About",
                     tabBarIcon:({color})=>(
                         <Ionicons name={"ios-help-circle"} size={20} color={color}/>
                     )

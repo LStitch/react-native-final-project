@@ -2,10 +2,10 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
 
-export default function Contacto2Screen() {
+export default function Supports() {
     return (
         <View style={styles.container}>
-            <Text style={{fontSize: 30, fontWeight: 'bold'}}>Aquí reside el contacto #2</Text>
+            <Text style={{fontSize: 30, fontWeight: 'bold'}}>Aquí residen los Supports</Text>
         </View>
     )
 }

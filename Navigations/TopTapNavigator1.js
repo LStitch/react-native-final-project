@@ -2,15 +2,18 @@ import React from 'react';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import Constants from 'expo-constants';
-import Contacto1Screen from '../Screens/Contacto1';
-import Contacto2Screen from '../Screens/Contacto2';
+import TopLaners from '../Screens/TopLaners';
+import Junglers from '../Screens/Junglers';
+import MidLaners from '../Screens/MidLaners';
+import ADCarrys from '../Screens/ADCarrys';
+import Supports from '../Screens/Supports';
 
 const Tab =  createMaterialTopTabNavigator();
 
 export default function TopTapNavigator1(){
     return(
         <Tab.Navigator
-            initialRouteName="Contacto1"
+            initialRouteName="TopLaners"
             tabBarOptions={{
                 activeTintColor:"#ff6600",
                 inactiveTintColor:"#060606",
@@ -27,20 +30,50 @@ export default function TopTapNavigator1(){
             }}
         > 
             <Tab.Screen
-                name="Contacto1"
-                component={Contacto1Screen}
+                name="TopLaners"
+                component={TopLaners}
                 options={{
-                    tabBarLabel:"Contacto 1",
+                    tabBarLabel:"Top",
                     tabBarIcon:({color})=>(
                         <Ionicons name={"person-circle-outline"} size={20} color={color}/>
                     )
                 }}
             />
             <Tab.Screen
-                name="Contacto2"
-                component={Contacto2Screen}
+                name="Junglers"
+                component={Junglers}
                 options={{
-                    tabBarLabel:"Contacto 2",
+                    tabBarLabel:"Jungle",
+                    tabBarIcon:({color})=>(
+                        <Ionicons name={"person-circle-outline"} size={20} color={color}/>
+                    )
+                }}
+            />
+            <Tab.Screen
+                name="MidLaners"
+                component={MidLaners}
+                options={{
+                    tabBarLabel:"Mid",
+                    tabBarIcon:({color})=>(
+                        <Ionicons name={"person-circle-outline"} size={20} color={color}/>
+                    )
+                }}
+            />
+            <Tab.Screen
+                name="ADCarrys"
+                component={ADCarrys}
+                options={{
+                    tabBarLabel:"ADC",
+                    tabBarIcon:({color})=>(
+                        <Ionicons name={"person-circle-outline"} size={20} color={color}/>
+                    )
+                }}
+            />
+            <Tab.Screen
+                name="Supports"
+                component={Supports}
+                options={{
+                    tabBarLabel:"Support",
                     tabBarIcon:({color})=>(
                         <Ionicons name={"person-circle-outline"} size={20} color={color}/>
                     )

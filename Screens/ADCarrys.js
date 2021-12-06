@@ -2,10 +2,10 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
 
-export default function Contacto1Screen() {
+export default function ADCarrys() {
     return (
         <View style={styles.container}>
-            <Text style={{fontSize: 30, fontWeight: 'bold'}}>Aquí reside el contacto #1</Text>
+            <Text style={{fontSize: 30, fontWeight: 'bold'}}>Aquí residen los ADCarrys</Text>
         </View>
     )
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Image} from 'react-native'
 
-export default function GitHubScreen() {
+export default function SearchScreen() {
     return (
         <View style={styles.container}>
             <Image source={{uri: 'https://cdn-icons-png.flaticon.com/512/25/25231.png'}}
